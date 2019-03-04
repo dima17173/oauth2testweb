@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     this.authenticationService.login(body.toString()).subscribe(data => {
       window.sessionStorage.setItem('token', JSON.stringify(data));
       console.log(window.sessionStorage.getItem('token'));
-      this.router.navigate(['users']);
+      this.router.navigate(['add-user']);
     }, error => {
       alert(error.error.error_description);
     });

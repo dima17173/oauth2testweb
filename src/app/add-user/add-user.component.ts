@@ -20,7 +20,6 @@ export class AddUserComponent implements OnInit {
       id: [],
       username: ['', Validators.required],
       password: ['', Validators.required],
-      enabled: ['', Validators.required]
     });
   }
 
