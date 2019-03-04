@@ -8,8 +8,10 @@ import {AuthenticationService} from "../authentication-service";
 })
 export class WalletComponent implements OnInit {
 
-  constructor(private authenticationService: AuthenticationService) { }
+  constructor(private authenticationService: AuthenticationService) {
+  }
 
   ngOnInit() {
+
   }
 }

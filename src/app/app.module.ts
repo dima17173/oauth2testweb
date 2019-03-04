@@ -7,9 +7,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import {AppRoutingModule} from './app.routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AuthenticationService} from './authentication-service';
-import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 import { WalletComponent } from './wallet/wallet.component';
-// import {TokenInterceptor} from './token-interceptor';
 
 
 @NgModule({
@@ -27,10 +26,7 @@ import { WalletComponent } from './wallet/wallet.component';
     HttpClientModule
   ],
   providers: [
-    AuthenticationService ,
-    // { provide: HTTP_INTERCEPTORS,
-    //   useClass: TokenInterceptor,
-    //   multi: true }
+    AuthenticationService
   ],
   bootstrap: [AppComponent]
 })

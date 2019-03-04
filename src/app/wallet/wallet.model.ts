@@ -1,4 +1,4 @@
-import {User} from "../add-user/user.model";
+import {User} from '../add-user/user.model';
 
 export enum Currency {
   UAH,

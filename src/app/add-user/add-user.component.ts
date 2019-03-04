@@ -26,8 +26,12 @@ export class AddUserComponent implements OnInit {
   onSubmit() {
     this.authenticationService.createUser(this.addForm.value)
       .subscribe(data => {
-        this.router.navigate(['list-user']);
+        this.router.navigate(['list-user']); //TODO redirect to list-users
       });
   }
-
 }
+
+
+
+
+
